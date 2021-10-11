@@ -1,0 +1,17 @@
+firstCase.InterfaceDest -> pkg.a:
+    void <init>() -> <init>
+    void someSimilarUsingOfMyInterface(firstCase.MyInterface) -> a
+firstCase.InterfaceSource -> pkg.b:
+    void <init>() -> <init>
+    void testMethod() -> testMethod
+    void lambda$testMethod$0() -> a
+firstCase.MyInterface -> pkg.c:
+    void testMethod() -> testMethod
+main.Main -> main.Main:
+    void <init>() -> <init>
+    void main(java.lang.String[]) -> main
+secondCase.InterfaceSource -> pkg.d:
+    void <init>() -> <init>
+    void testMethod() -> a
+secondCase.MyInterface -> pkg.e:
+    void testMethod() -> a

@@ -1,0 +1,17 @@
+-injars /test/in.zip
+-outjars /test/out.zip
+
+-libraryjars /test/jdk1.8.0_281/jre/lib/rt.jar
+
+-dontshrink
+-dontoptimize
+-printmapping /test/mappings.txt
+-repackageclasses pkg
+-verbose
+-printconfiguration /test/fullconfiguration.txt
+
+
+
+-keepclasseswithmembers,includedescriptorclasses,includecode class ***Main*** {
+    *** ***(...);
+}
